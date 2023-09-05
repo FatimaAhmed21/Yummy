@@ -1,0 +1,53 @@
+body {
+  background-color: #000;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.col-md-3,
+button,
+i {
+  cursor: pointer;
+}
+.side-nav {
+  width: 320px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  z-index: 1010;
+}
+nav {
+  background-color: #000;
+  width: 250px;
+}
+nav ul li {
+  margin-bottom: 15px;
+}
+.nav-control {
+  width: calc(100% - 250px);
+}
+.fa-close {
+  display: none;
+}
+
+.overlay {
+  background-color: #f9f6f6ca;
+  position: absolute;
+  top: 102%;
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.5s;
+}
+.meal:hover .overlay,
+.category:hover .overlay {
+  top: 0;
+}
+
+.inpsRow{
+  display: none;
+}

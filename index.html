@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <<<BOOTSTRAP FILE>>> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <<<FONT-AWESOME FILE>>> -->
+    <link rel="stylesheet" href="css/font-awesome.all.min.css" />
+    <!-- <<<CSS FILE>>> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <<<Favicon> -->
+    <link rel="shortcut icon" href="images/logo.png" />
+    <title>Yummy</title>
+  </head>
+  <body>
+    
+    <div class="side-nav d-flex">
+      <nav class="py-4 d-flex flex-column justify-content-between">
+        <ul class="list-unstyled ps-4">
+          <li><a href="#search" onclick="showSearchInps()">Search</a></li>
+          <li>
+            <a href="#categories" onclick="showCategories()">Categories</a>
+          </li>
+          <li><a href="#area" onclick="showAreas()">Area</a></li>
+          <li>
+            <a href="#ingredients" onclick="showIngredients()">Ingredients</a>
+          </li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="text-white ps-4">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <p>Copyright Â&copy; 2019 All Rights Reserved.</p>
+        </div>
+      </nav>
+      <div
+        class="nav-control bg-white d-flex flex-column justify-content-between align-items-center px-2 py-4"
+      >
+        <img src="images/logo.png" width="50" alt="" />
+        <div class="control-icons d-flex flex-column">
+          <i
+            class="fa-solid fa-close display-5 close-icon"
+            onclick="closeNav()"
+          ></i>
+          <i class="fa-solid fa-bars fa-2x open-icon" onclick="openNav()"></i>
+        </div>
+        <div class="global-icons d-flex flex-column">
+          <i class="fa-solid fa-globe mb-2"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="inpsRow"></div>
+      <div class="row">
+        
+      </div>
+    </div>
+
+    <!-- <<<JS FILE>>> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
